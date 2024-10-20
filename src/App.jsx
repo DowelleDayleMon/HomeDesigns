@@ -5,6 +5,8 @@ import About from './assets/About.jpg'
 import SampleDesign from './components/SampleDesign'
 import Details from './components/Details'
 import Header from './components/Header'
+import Review from './components/Review'
+import Reviewer from '../src/assets/Review1.jpg'
 
 
 const App = () => {
@@ -65,8 +67,22 @@ const App = () => {
               <div></div>
             </div>
 
-
           </div>
+      </section>
+
+      <section className={styles.Sixth}>
+        <div className={styles.Sixth_top}>
+          <span>Feedback and Reviews</span>
+          <span>Interior Design Gallery</span>
+          <span>Hear from our clients and see how our designs have transformed their spaces. Their experiences reflect our dedication to quality and customer satisfaction.</span>
+        </div>
+        
+        <div className={styles.Review_container}>
+          <Review Person={Reviewer} Name="Engr. Juan Dela Cruz" Feedback="The team transformed our space beyond expectations, delivering a perfect blend of style, functionality, and attention to detail."/>
+          <Review Person={Reviewer} Name="Engr. Juan Dela Cruz" Feedback="The team transformed our space beyond expectations, delivering a perfect blend of style, functionality, and attention to detail."/>
+          <Review Person={Reviewer} Name="Engr. Juan Dela Cruz" Feedback="The team transformed our space beyond expectations, delivering a perfect blend of style, functionality, and attention to detail."/>
+
+        </div>
       </section>
     </div>
   )
