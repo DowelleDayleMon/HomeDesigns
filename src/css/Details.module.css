@@ -1,0 +1,11 @@
+.Details{
+    display: flex;
+    gap:.25rem;
+    flex-direction: column;
+}
+.Details span:first-child{
+    font-size: 3em;
+}
+.Details span:nth-child(2){
+    font-size: 1.25em;
+}

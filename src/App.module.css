@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    border:none;
+    outline:none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, Helvetica;
+    color:#333;
+}
+.App{
+    background-color: #fff;
+}
+.First{
+    height:100vh;
+    background-image: url(./assets/Modern_Room.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.Second_inner{
+    display: flex;
+
+    justify-content: space-between;
+    padding:3.5rem;
+    align-items: center;
+
+}
+.Categories{
+    display: flex;
+    flex-direction: column;
+    gap:.25rem;
+}
+.Categories span:nth-child(2){
+    font-size: 2em;
+    font-weight: bold;
+}
+.Explain{
+    width:50%;
+}
+.Second_images{
+    display: flex;
+    gap:.25rem;
+    padding-bottom: 3rem;
+
+}
+.Third{
+    background-image: url(./assets/whitebg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.Third_inner{
+    display: flex;
+    justify-content: space-between;
+    padding:1rem;
+
+}
+.Fourth{
+    padding:3.5rem;
+    display:flex;
+    justify-content: space-between;
+    gap:2rem;
+
+}
+.Fourth_inner{
+    display:flex;
+    flex-direction:column;
+    gap:.25rem;
+    width:65%;
+}
+.Fourth_inner span:nth-child(2){
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.Fourth_inner button{
+    width: 20%;
+    padding:.75rem 1.25rem;
+    background-color: #024744;
+    color:#fff;
+    border-radius: 20px;
+}
+.Fourth_inner p{
+    font-size: 1.25em;
+    line-height:200%;
+}
+.About{
+    width:35%;
+    aspect-ratio: 1/1;
+    border-radius:0 0 250px 0;
+}
+
+@media(max-width:431px){
+    .Second_inner{
+        flex-direction: column;
+        padding:1.5rem;
+    }
+    .Categories, .Explain{
+        width:100%;
+    }
+    .Categories span:nth-child(2){
+        font-size:1.5em ;
+    }
+    .Second_images{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:.5rem;
+    }
+    .Last{
+        display:none;
+    }
+    .Fourth{
+        flex-direction: column;
+        padding:.75rem;
+    }
+    .About, .Fourth_inner{
+        width:100%;
+        border-radius: 0;
+        text-align: center;
+    }
+    .Fourth_inner p{
+        text-align: justify;
+    }
+    .Fourth_inner button{
+        width:100%;
+    }
+}

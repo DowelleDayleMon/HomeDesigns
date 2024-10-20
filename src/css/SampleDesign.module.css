@@ -1,0 +1,19 @@
+.SampleDesign{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    width:min-content;
+    width:48%;
+
+}
+.SampleDesign img{
+    width:98%;
+}
+
+@media(max-width:431px){
+    .SampleDesign{
+        gap:.25rem;
+        font-weight:bold;
+    }
+
+}
